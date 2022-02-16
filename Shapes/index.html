@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D3 Charts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- CREATE EXAMPLE SVG SHAPES -->
+    <h1>Example shapes:</h1>
+    <svg width="600" height="400">
+        <rect x="300" y="100" fill="black" width="100" height="200"></rect>
+        <circle cx="200" cy="200" r="50" fill="pink"></circle>
+        <line x1="100" y1="100" x2="100" y2="300" stroke="grey" stroke-width="3"></line>
+    </svg>
+    <h1>Example paths:</h1>
+    <svg width="600" height="400">
+        <path d="M 300 50 L 225 200 L 375 200 Z" fill="blue"></path>
+        <path d="M 150 50 L 75 200 L 225 200 C 225 200 150 150 150 50" fill="orange"></path>
+        <circle cx="150" cy="150" r="5" fill="grey"></circle>
+        <line x1="225" y1="200" x2="150" y2="150" stroke="grey"></line>
+    </svg>
+    <h1>Example graphs:</h1>
+
+    <div class="canvas"></div>
+
+    <script src="https://d3js.org/d3.v7.min.js"></script> 
+    <script src="index.js"></script>
+</body>
+</html>

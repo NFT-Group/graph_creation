@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Crypto Kittens",
+        "size": 200
+    },
+    {
+        "name": "Bored Ape Yacht Club",
+        "size": 600
+    },
+    {
+        "name": "Cryptopunks",
+        "size": 300
+    },
+    {
+        "name": "Pudgy Penguins",
+        "size": 900
+    },
+    {
+        "name": "Cool Cats",
+        "size": 80
+    }
+]
