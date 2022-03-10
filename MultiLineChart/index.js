@@ -1,7 +1,8 @@
 d3.csv("MergedCSV.csv").then(d => chart(d))
 
-function chart(data) {
 
+function chart(data) {
+	
 	var keys = data.columns.slice(1);
 
 	// Format time (parse text from CSV & convert to date format)

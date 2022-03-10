@@ -1,5 +1,6 @@
 import numpy as np 
 import pandas as pd
+import json
 from datetime import datetime
 
 
@@ -82,6 +83,11 @@ def attachDollarPrice(MergedCSV):
     output1['cool_cats_2'] = output1['dollar_price'] * output1['cool_cats_1']
     output1.to_csv(MergedCSV, index = False)
 
+def csvToJSON(CSV):
+    df = pd.read_csv(CSV)
+    result = df.to_json(orient='records')
+    json.dump(result, 'Merged.json')
+
 
 convertCSV("CoolCats.csv", "CoolCats2.csv")
 convertCSV("BoredApes.csv", "BoredApes2.csv")
@@ -92,5 +98,8 @@ dollarFile = "ETH-USD copy.csv"
 mergeCSV("CoolCats2.csv", "BoredApes2.csv", outputFile)
 addDollarPrice(outputFile, dollarFile)
 attachDollarPrice(outputFile)
+
+csvToJSON(outputFile)
+
 
 
