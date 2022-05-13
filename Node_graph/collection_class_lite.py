@@ -41,7 +41,6 @@ class Collection_lite:
 
         ''' FIND THE CURRENT DISTRUBUTION OF OWNERS I.E., FINAL TRANSACTIONS
         OF OF EVERY NFT INDEX '''
-        print(self.transactions_df)
         final_owners_list = self.transactions_df['tokenid'].unique()
         unique_id_array = np.empty((len(final_owners_list), 3), dtype=object)
         unique_id_array[:,0] = final_owners_list
